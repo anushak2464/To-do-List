@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>To-Do Task Manager</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do List</h1>
+            <p>Organize your daily tasks</p>
+            <form id="Taskform">
+                <input type="text" id="Taskinput"
+                placeholder="Enter your Task">
+                <button type="submit">Add Task</button>
+            </form>
+            <div class="counters">
+                <span>Total Task: <b id="total">0</b></span>
+                <span>Completed Task: <b id="completed">0</b></span>
+                <span>Remaining Task: <b id="remaining">0</b></span>
+            </div>
+            <div class="filters">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter="completed">Completed</button>
+                <button type="button" data-filter="pending">Pending</button>
+                <button type="button" id="clearCompleted">
+                 Clear Completed
+                </button>
+            </div>
+            <ul id="Tasklist"></ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
